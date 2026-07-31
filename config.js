@@ -1,7 +1,8 @@
 window.MIRLO_CONFIG = {
-  // Reemplazar antes de publicar. Formato WhatsApp: código de país + número, sin + ni espacios.
-  whatsapp: "573000000000",
-  email: "hola@mirlo.com.co",
+  whatsapp: "573128913828",
+  email: "mirloseguros@gmail.com",
   location: "Medellín, Colombia",
-  whatsappMessage: "Hola, quiero recibir orientación de MIRLO para revisar mis necesidades de protección."
+  businessName: "MIRLO Agencia de Seguros",
+  whatsappMessage:
+    "Hola, quiero recibir orientación de MIRLO para revisar mis necesidades de protección."
 };
