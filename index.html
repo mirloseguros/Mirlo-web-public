@@ -236,13 +236,11 @@
         <div class="cta-copy reveal">
           <span class="eyebrow eyebrow-light">Estamos para acompañarte</span>
           <h2 id="contact-title">Hablemos de lo que más te importa.</h2>
-          <p>Cuéntanos brevemente qué quieres proteger. Organizaremos la conversación y te indicaremos el siguiente paso.</p>
+          <p>Cuéntanos brevemente qué quieres proteger. Revisaremos tu solicitud y te orientaremos sobre el siguiente paso.</p>
           <div class="contact-options">
             <a class="button button-primary" data-whatsapp href="#">Escribir por WhatsApp</a>
-            <a class="button button-light" data-email-link href="#">Enviar correo</a>
+            <a class="button button-light" data-email-link href="#">Escribir por correo</a>
           </div>
-          <small>Los datos de contacto se configuran en <code>config.js</code> antes de publicar.</small>
-        </div>
         <form class="contact-form reveal" id="contact-form" novalidate>
           <div class="field-row">
             <label>Nombre
@@ -258,17 +256,18 @@
           <label>¿Qué quieres proteger?
             <select name="service" required>
               <option value="">Selecciona una opción</option>
-              <option>Personas y familias</option>
-              <option>Patrimonio y hogar</option>
-              <option>Empresas</option>
+              <option>Mi vida, salud o familia</option>
+              <option>Mi hogar o patrimonio</option>
+              <option>Mi empresa o equipo</option>
               <option>Movilidad</option>
-              <option>Revisión de pólizas actuales</option>
+              <option>Quiero revisar pólizas que ya tengo</option>
+              <option>Aún no estoy seguro</option>
             </select>
           </label>
           <label>Cuéntanos brevemente
             <textarea name="message" rows="4" placeholder="Ejemplo: quiero revisar la protección de mi familia y comparar las pólizas que ya tengo."></textarea>
           </label>
-          <button class="button button-primary" type="submit">Preparar solicitud</button>
+          <button class="button button-primary" type="submit">Continuar por WhatsApp</button>
           <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
         </form>
       </div>
