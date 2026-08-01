@@ -82,7 +82,7 @@
 
     if (whatsapp) {
       window.open(buildWhatsAppUrl(message), "_blank", "noopener");
-      status.textContent = "La solicitud quedó preparada para enviarla por WhatsApp.";
+      status.textContent = "Abrimos WhatsApp con tu solicitud. Revisa el mensaje y envíalo para continuar. ";
     } else if (email) {
       window.location.href = `mailto:${email}?subject=${encodeURIComponent("Solicitud de orientación MIRLO")}&body=${encodeURIComponent(message)}`;
       status.textContent = "La solicitud quedó preparada en tu aplicación de correo.";

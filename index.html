@@ -18,7 +18,7 @@
     "@context": "https://schema.org",
     "@type": "InsuranceAgency",
     "name": "MIRLO Agencia de Seguros",
-    "description": "Asesoría boutique en protección integral para personas, familias y empresas.",
+    "description": "Asesoría experta en protección integral para personas, familias y empresas.",
     "areaServed": "Colombia"
   }
   </script>
@@ -75,7 +75,7 @@
         <div class="section-heading reveal">
           <span class="eyebrow">Tu vida, tus proyectos, tu tranquilidad</span>
           <h2 id="solutions-title">Acompañamiento para cada etapa de lo que estas construyendo</h2>
-          <p>En MIRLO entendemos el patrimonio como todo aquello que da sentido a tu vida: tus ingresos, tu empresa, tus proyectos,tu hogar, tu salud, tu familia y tu legado.Te ayudamos a tomar decisiones claras para que puedas avanzar y disfrutar con mayor tranquilidad.</p>
+          <p>En MIRLO entendemos el patrimonio como todo aquello que da sentido a tu vida: tus ingresos, tu empresa, tus proyectos,tu hogar, tu salud, tu familia y tu legado. Te ayudamos a tomar decisiones claras para que puedas avanzar y disfrutar con mayor tranquilidad.</p>
         </div>
         <div class="solution-grid">
           <article class="solution-card reveal">
@@ -268,8 +268,32 @@
             </select>
           </label>
           <label>Cuéntanos brevemente
-            <textarea name="message" rows="4" placeholder="Ejemplo: quiero revisar la protección de mi familia y comparar las pólizas que ya tengo."></textarea>
+            <textarea name="message" rows="4" placeholder="Ejemplo: quiero revisar la protección de mi familia y comparar las pólizas que ya tengo.
+
+Evita incluir información medica detallada o datos sensibles en este formulario."
+            ></textarea>
           </label>
+          <label class="privacy-consent">
+  <input
+    type="checkbox"
+    name="privacyConsent"
+    value="Autorizado"
+    required
+  />
+
+  <span>
+    Autorizo a MIRLO Agencia de Seguros a tratar mis datos personales
+    para atender esta solicitud, contactarme y brindarme orientación,
+    conforme a la
+    <a href="politica-tratamiento-datos.html" target="_blank">
+      Política de Tratamiento de Datos Personales
+    </a>.
+  </span>
+</label>
+
+<small class="privacy-note">
+  
+</small>
           <button class="button button-primary" type="submit">Continuar por WhatsApp</button>
           <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
         </form>
@@ -281,7 +305,7 @@
     <div class="container footer-grid">
       <div class="footer-brand">
         <img src="assets/mirlo-horizontal.svg" alt="MIRLO Agencia de Seguros" />
-        <p>Asesoría experta para proteger la vida que estás construyendo.</p>
+        
       </div>
       <div>
         <strong>Explorar</strong>
@@ -302,9 +326,24 @@
       </div>
     </div>
     <div class="container footer-bottom">
-      <span>© <span id="year"></span> MIRLO Agencia de Seguros.</span>
-      <span>La confianza es el patrimonio más importante que administramos.</span>
-    </div>
+  <span>
+    © <span id="year"></span> MIRLO Agencia de Seguros.
+  </span>
+
+  <div class="footer-legal">
+    <a href="politica-tratamiento-datos.html">
+      Política de tratamiento de datos
+    </a>
+
+    <a href="aviso-privacidad.html">
+      Aviso de privacidad
+    </a>
+  </div>
+
+  <span>
+    La confianza es el patrimonio más importante que administramos.
+  </span>
+</div>
   </footer>
 
   <a class="floating-whatsapp" data-whatsapp href="#" aria-label="Escribir a MIRLO por WhatsApp">

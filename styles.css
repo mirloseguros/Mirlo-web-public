@@ -232,3 +232,164 @@ h1 em { color: var(--gold); font-style: normal; }
   .skip-link, .floating-whatsapp { display: none !important; }
   .site-header { position: static; }
 }
+.privacy-consent {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+  margin-top: 0.25rem;
+  color: var(--gray);
+  font-size: 0.82rem;
+  line-height: 1.45;
+}
+
+.privacy-consent input {
+  width: 18px;
+  height: 18px;
+  margin-top: 0.15rem;
+  flex: 0 0 auto;
+  accent-color: var(--blue);
+}
+
+.privacy-consent a {
+  color: var(--blue);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.privacy-note {
+  display: block;
+  margin-top: -0.25rem;
+  color: var(--gray);
+  font-size: 0.76rem;
+  line-height: 1.4;
+}
+.footer-legal {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.footer-legal a {
+  color: inherit;
+  font-size: 0.82rem;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+/* Autorización de tratamiento de datos */
+.contact-form .privacy-consent {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-top: 0.25rem;
+  color: var(--gray);
+  font-size: 0.82rem;
+  font-weight: 400;
+  line-height: 1.45;
+}
+
+.contact-form .privacy-consent span {
+  font-weight: 400;
+}
+
+.contact-form .privacy-consent input[type="checkbox"] {
+  appearance: auto;
+  -webkit-appearance: checkbox;
+  width: 18px;
+  height: 18px;
+  min-width: 18px;
+  margin: 0.15rem 0 0;
+  padding: 0;
+  accent-color: var(--blue);
+}
+
+.contact-form .privacy-note {
+  grid-column: 1 / -1;
+  display: block;
+  margin-top: 0;
+  color: var(--gray);
+  font-size: 0.76rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+/* Enlaces legales */
+.footer-legal {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 1.25rem;
+}
+
+.footer-legal a {
+  color: inherit;
+  font-size: 0.82rem;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* Evita que WhatsApp cubra el cierre del footer */
+.footer-bottom {
+  padding-right: 5.5rem;
+}
+
+@media (max-width: 720px) {
+  .footer-bottom {
+    padding-right: 1rem;
+    padding-bottom: 5.5rem;
+  }
+
+  .footer-legal {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  .contact-form .privacy-note {
+  grid-column: 1 / -1;
+  display: block;
+  margin: 0;
+  padding-bottom: 2.5rem;
+}
+
+.contact-form button[type="submit"] {
+  grid-column: 1 / -1;
+  margin: 0;
+  justify-self: start;
+}/* Separación definitiva: aviso médico y botón */
+.contact-form .privacy-note {
+  grid-column: 1 / -1;
+  display: block;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.contact-form .privacy-note + button[type="submit"] {
+  grid-column: 1 / -1;
+  justify-self: start;
+  margin-top: 2.25rem !important;
+}
+
+/* Separación definitiva entre enlaces legales */
+.site-footer .footer-legal {
+  display: inline-flex !important;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 2.75rem !important;
+  row-gap: 0.75rem !important;
+}
+
+.site-footer .footer-legal a {
+  display: inline-block;
+  margin: 0 !important;
+  white-space: nowrap;
+}
+
+@media (max-width: 720px) {
+  .site-footer .footer-legal {
+    display: flex !important;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem !important;
+  }
+}
