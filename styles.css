@@ -920,3 +920,28 @@ h1 em { color: var(--gold); font-style: normal; }
     object-position: center center !important;
   }
 }
+/* Ajuste final del hero en móvil */
+
+@media (max-width: 720px) {
+  .hero-media picture img {
+    object-position: 42% center !important;
+  }
+
+  .hero-copy > p {
+    max-width: 305px !important;
+    font-size: 16px !important;
+    line-height: 1.55 !important;
+  }
+
+  .hero-actions .button {
+    width: 260px !important;
+    max-width: 100% !important;
+    min-height: 54px !important;
+  }
+
+  .hero-proof {
+    max-width: 285px !important;
+    color: rgba(251, 248, 242, 0.88) !important;
+    gap: 12px !important;
+  }
+}
