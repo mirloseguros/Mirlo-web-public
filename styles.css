@@ -72,7 +72,23 @@ h1 em { color: var(--gold); font-style: normal; }
 .hero-proof span { position: relative; padding-left: 14px; }
 .hero-proof span::before { content: ""; position: absolute; left: 0; top: .65em; width: 5px; height: 5px; background: var(--gold); border-radius: 50%; }
 .hero-media { position: relative; min-height: 650px; overflow: hidden; }
-.hero-media::before { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, var(--navy) 0, rgba(0,33,71,.22) 36%, rgba(0,0,0,.02) 70%); z-index: 1; }
+.hero-media::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 33, 71, 0.96) 0%,
+    rgba(0, 33, 71, 0.96) 28%,
+    rgba(0, 33, 71, 0.88) 36%,
+    rgba(0, 33, 71, 0.62) 44%,
+    rgba(0, 33, 71, 0.28) 53%,
+    rgba(0, 33, 71, 0.08) 61%,
+    rgba(0, 33, 71, 0.00) 69%
+  );
+}
 .hero-media img { width: 100%; height: 100%; object-fit: cover; }
 .eye-ring { display: block; border: 4px solid var(--gold); border-radius: 50%; }
 .eye-ring-lg { width: 92px; height: 92px; position: absolute; right: 36px; top: 34px; z-index: 2; opacity: .92; }
@@ -392,4 +408,49 @@ h1 em { color: var(--gold); font-style: normal; }
     align-items: flex-start;
     gap: 0.75rem !important;
   }
+}
+/* CORRECCIÓN FINAL DEL DEGRADADO DEL HERO */
+
+.hero-grid {
+  background: #002147 !important;
+}
+
+.hero-copy {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.hero-copy::before,
+.hero-copy::after {
+  display: none !important;
+}
+
+.hero-media::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 33, 71, 1) 0%,
+    rgba(0, 33, 71, 0.99) 24%,
+    rgba(0, 33, 71, 0.96) 31%,
+    rgba(0, 33, 71, 0.88) 38%,
+    rgba(0, 33, 71, 0.74) 46%,
+    rgba(0, 33, 71, 0.55) 55%,
+    rgba(0, 33, 71, 0.35) 64%,
+    rgba(0, 33, 71, 0.18) 73%,
+    rgba(0, 33, 71, 0.06) 82%,
+    rgba(0, 33, 71, 0) 91%
+  ) !important}
+
+.hero-media img {
+  object-position: 72% center !important;
+}
+
+.eye-ring,
+.eye-ring-lg,
+.hero-note {
+  display: none !important;
 }
