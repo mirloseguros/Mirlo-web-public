@@ -770,4 +770,153 @@ h1 em { color: var(--gold); font-style: normal; }
   .hero-copy {
     padding-top: 78px !important;
   }
+}@media (min-width: 901px) {
+  .hero-proof {
+    transform: translateY(-10px);
+  }
+}/* ==================================================
+   HERO MIRLO, AJUSTE MÓVIL
+   ================================================== */
+
+@media (max-width: 720px) {
+  .hero {
+    padding: 8px !important;
+  }
+
+  .hero-grid {
+    min-height: 890px !important;
+    border-radius: 20px !important;
+  }
+
+  .hero-copy {
+    width: 100% !important;
+    padding: 34px 26px 26px !important;
+  }
+
+  .hero-copy h1 {
+    max-width: 440px !important;
+    font-size: clamp(36px, 9vw, 46px) !important;
+    line-height: 1.02 !important;
+    letter-spacing: -0.025em !important;
+    margin-bottom: 26px !important;
+  }
+
+  .hero-copy h1 em {
+    font-size: 1.16em !important;
+    line-height: 0.96 !important;
+    margin-bottom: 8px !important;
+  }
+
+  .hero-copy > p {
+    max-width: 340px !important;
+    font-size: 17px !important;
+    line-height: 1.55 !important;
+    color: rgba(251, 248, 242, 0.82) !important;
+  }
+
+  .hero-actions {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 12px !important;
+    margin: 28px 0 34px !important;
+  }
+
+  .hero-actions .button {
+    width: 230px !important;
+    min-height: 56px !important;
+    padding: 0 22px !important;
+    justify-content: center !important;
+    white-space: nowrap !important;
+  }
+
+  .hero-proof {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    max-width: 310px !important;
+    gap: 10px !important;
+    padding-bottom: 24px !important;
+    font-size: 14px !important;
+    transform: none !important;
+  }
+
+  .hero-media img {
+    object-position: center center !important;
+  }
+}/* Ajuste final del hero móvil */
+
+@media (max-width: 720px) {
+  .hero-grid {
+    min-height: 930px !important;
+  }
+
+  .hero-copy {
+    padding: 34px 24px 28px !important;
+  }
+
+  .hero-copy h1 {
+    width: 100% !important;
+    max-width: 430px !important;
+    font-size: clamp(35px, 8.4vw, 43px) !important;
+    line-height: 1.04 !important;
+    letter-spacing: -0.025em !important;
+    margin-bottom: 26px !important;
+  }
+
+  .hero-copy h1 em {
+    display: block !important;
+    font-size: 1.16em !important;
+    line-height: 0.96 !important;
+    margin-bottom: 10px !important;
+  }
+
+  .hero-copy > p {
+    max-width: 335px !important;
+    font-size: 16px !important;
+    line-height: 1.55 !important;
+  }
+
+  .hero-actions {
+    align-items: flex-start !important;
+    margin: 28px 0 32px !important;
+  }
+
+  .hero-actions .button {
+    width: 100% !important;
+    max-width: 280px !important;
+    min-height: 56px !important;
+    white-space: nowrap !important;
+  }
+
+  .hero-proof {
+    max-width: 300px !important;
+    gap: 10px !important;
+    font-size: 14px !important;
+  }
+
+  .hero-media img {
+    object-position: 64% center !important;
+  }
+}
+
+
+/* HERO MOVIL CON IMAGEN VERTICAL */
+
+.hero-media picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 720px) {
+  .hero-media picture,
+  .hero-media picture img {
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .hero-media picture img {
+    object-fit: cover !important;
+    object-position: center center !important;
+  }
 }
