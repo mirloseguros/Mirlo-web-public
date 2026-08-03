@@ -944,4 +944,8 @@ h1 em { color: var(--gold); font-style: normal; }
     color: rgba(251, 248, 242, 0.88) !important;
     gap: 12px !important;
   }
+}@media (max-width: 720px) {
+  .hero-copy > p {
+    max-width: 290px !important;
+  }
 }
