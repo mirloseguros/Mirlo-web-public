@@ -948,4 +948,12 @@ h1 em { color: var(--gold); font-style: normal; }
   .hero-copy > p {
     max-width: 290px !important;
   }
+}@media (max-width: 720px) {
+  .hero-copy > p {
+    max-width: 260px !important;
+  }
+
+  .hero-media picture img {
+    object-position: 35% center !important;
+  }
 }
