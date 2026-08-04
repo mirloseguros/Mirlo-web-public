@@ -997,4 +997,21 @@ h1 em { color: var(--gold); font-style: normal; }
 
 .solution-card-dark > a span {
   display: inline !important;
+}/* Cierre limpio de la tarjeta Experiencia MIRLO */
+
+.solution-card-dark > a {
+  max-width: calc(100% - 28px);
+  white-space: normal !important;
+  line-height: 1.3;
+}
+
+.solution-card-dark {
+  padding-bottom: 34px !important;
+}
+
+@media (min-width: 901px) {
+  .whatsapp-float {
+    right: 22px !important;
+    bottom: 22px !important;
+  }
 }
