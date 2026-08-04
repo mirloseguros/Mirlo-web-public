@@ -1014,4 +1014,48 @@ h1 em { color: var(--gold); font-style: normal; }
     right: 22px !important;
     bottom: 22px !important;
   }
+}.method-visual {
+  position: relative;
+  overflow: hidden;
+  border-radius: 32px;
+  background: #fbf8f2;
+  min-height: 540px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.method-visual img {
+  width: 100%;
+  height: 540px;
+  display: block;
+  object-fit: cover;
+  object-position: 74% 64%;
+  transform: scale(1.18);
+  transform-origin: center center;
+}
+.method-visual blockquote {
+  position: absolute;
+  left: -48px;
+  bottom: 36px;
+  max-width: 72%;
+  z-index: 2;
+}
+@media (max-width: 900px) {
+  .method-visual {
+    min-height: 420px;
+  }
+
+  .method-visual img {
+    height: 420px;
+    object-position: 72% 66%;
+    transform: scale(1.14);
+  }
+
+  .method-visual blockquote {
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    max-width: none;
+  }
 }
