@@ -1101,3 +1101,31 @@ h1 em { color: var(--gold); font-style: normal; }
   transform: scale(1.68);
   transform-origin: center center;
 }
+.method-visual img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: 82% 58%;
+  transform: scale(1.78);
+  transform-origin: center center;
+}
+/* Close-up definitivo de Cómo acompañamos */
+
+.method-visual {
+  position: relative !important;
+  overflow: hidden !important;
+  min-height: 560px !important;
+}
+
+.method-visual > img {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none !important;
+  object-fit: cover !important;
+
+  transform: translate(-7%, -8%) scale(2.15) !important;
+  transform-origin: 76% 62% !important;
+}
