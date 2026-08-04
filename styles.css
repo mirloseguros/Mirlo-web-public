@@ -980,3 +980,21 @@ h1 em { color: var(--gold); font-style: normal; }
   stroke-linecap: round;
   stroke-linejoin: round;
 }
+/* Separación editorial de la tarjeta Experiencia MIRLO */
+
+.solution-card-dark .icon-wrap {
+  margin-bottom: 20px !important;
+}
+
+.solution-card-dark .card-kicker {
+  margin-top: 0 !important;
+}.solution-card-dark > a {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+.solution-card-dark > a span {
+  display: inline !important;
+}
