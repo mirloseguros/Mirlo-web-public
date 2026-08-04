@@ -1059,3 +1059,20 @@ h1 em { color: var(--gold); font-style: normal; }
     max-width: none;
   }
 }
+.method-visual {
+  position: relative;
+  overflow: hidden;
+  border-radius: 32px;
+  min-height: 560px;
+  background: #fbf8f2;
+}
+
+.method-visual img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: 74% 66%;
+  transform: scale(1.48);
+  transform-origin: center center;
+}
