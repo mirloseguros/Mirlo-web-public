@@ -1128,4 +1128,71 @@ h1 em { color: var(--gold); font-style: normal; }
 
   transform: translate(-7%, -8%) scale(2.15) !important;
   transform-origin: 76% 62% !important;
+}/* Ajuste fino sección Cómo acompañamos */
+.method-visual {
+  position: relative !important;
+  overflow: hidden !important;
+  min-height: 560px !important;
+}
+
+.method-visual > img {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none !important;
+  object-fit: cover !important;
+
+  /* más close-up y encuadre corrido a la izquierda */
+  transform: translate(-12%, -10%) scale(2.18) !important;
+  transform-origin: 78% 60% !important;
+}.method-visual > img {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none !important;
+  object-fit: cover !important;
+
+  transform: translate(-15%, -10%) scale(2.12) !important;
+  transform-origin: 80% 60% !important;
+}
+/* Imagen optimizada de Cómo acompañamos */
+
+.method-visual {
+  position: relative !important;
+  overflow: hidden !important;
+  min-height: 560px !important;
+  background: #fbf8f2 !important;
+}
+
+.method-visual > img {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none !important;
+  object-fit: cover !important;
+  object-position: center center !important;
+  transform: none !important;
+  transform-origin: center center !important;
+}/* Encuadre definitivo de Cómo acompañamos */
+
+.method-visual {
+  position: relative !important;
+  min-height: 560px !important;
+  overflow: hidden !important;
+  background: #fbf8f2 !important;
+}
+
+.method-visual > img {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none !important;
+  object-fit: cover !important;
+  object-position: center center !important;
+  transform: none !important;
+  transform-origin: center center !important;
 }
