@@ -1231,4 +1231,38 @@ h1 em { color: var(--gold); font-style: normal; }
     padding: 18px 20px !important;
     font-size: 16px !important;
   }
+}/* Cita horizontal de Cómo acompañamos */
+
+.method-visual blockquote {
+  top: auto !important;
+  left: auto !important;
+  right: 24px !important;
+  bottom: 24px !important;
+
+  width: min(60%, 540px) !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 18px 24px !important;
+  box-sizing: border-box !important;
+
+  background: rgba(251, 248, 242, 0.96) !important;
+  border-left: 3px solid #c8a43a !important;
+
+  color: #002147 !important;
+  font-size: clamp(15px, 1.05vw, 18px) !important;
+  line-height: 1.42 !important;
+  font-weight: 400 !important;
+
+  box-shadow: 0 10px 26px rgba(0, 33, 71, 0.09) !important;
+  z-index: 3 !important;
+}@media (max-width: 900px) {
+  .method-visual blockquote {
+    left: 16px !important;
+    right: 16px !important;
+    bottom: 16px !important;
+    width: auto !important;
+    padding: 17px 20px !important;
+    font-size: 15px !important;
+    line-height: 1.42 !important;
+  }
 }
